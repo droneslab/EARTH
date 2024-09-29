@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="EARTH"/>
+  <meta property="og:description" content="Excavation Autonomy with Resilient Traversability and Handling"/>
+  <meta property="og:url" content="https://droneslab.github.io/EARTH/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/EARTH-Logo.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="EARTH">
+  <meta name="twitter:description" content="Excavation Autonomy with Resilient Traversability and Handling">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/EARTH-Logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Featureness">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>EARTH : Learning Visual Information Utilty</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span style="color: rgb(192, 0, 0)">EARTH</span>: Excavation Autonomy with Resilient Traversability and Handling</h1>
+            <!-- <h1 style="font-size:1.5rem">European Conference on Computer Vision (ECCV) 2024</h1> -->
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yash.turkar.in/" target="_blank">Yash Turkar</a>,</span>
+              <span class="author-block">
+                <a href="https://christoaluckal.com/" target="_blank">Christo Aluckal</a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Q0Yau0wAAAAJ&hl=en" target="_blank">Jake Gemerek</a>,</span>
+                <span class="author-block">
+                  <a href="https://cse.buffalo.edu/faculty/kdantu/" target="_blank">Karthik Dantu</a></span>
+                  </div>
+            <div class="is-size-6 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Sugheerth Sreedharan</a>,</span>
+              <span class="author-block">
+                <a target="_blank">Roopesh Vinodh Kumar Lal</a>,</span>
+              <span class="author-block">
+                <a target="_blank">Alex Graziose</a>,</span>
+              <span class="author-block">
+                <a target="_blank">Sean Courtney</a>,</span>
+              <span class="author-block">
+                <a target="_blank">Ishaan Malhotra</a>,</span>
+                  </div>
+
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Center for Embodied Autonomy and Robotics (CEAR) <br> University at Buffalo</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <a href="https://www.buffalo.edu/">
+                      <img style="width:30%; padding-right: 15px;" src="static/images/ub_logo.png">
+                    </a>
+<!--                     <a href="https://eccv2024.ecva.net/">
+                      <img style="width:30%; height: 30%; padding-right: 15px;" src="static/images/eccv_logo.png">
+                    </a> -->
+                    <a href="http://drones.cse.buffalo.edu/">
+                      <img style="width:30%; height:auto; padding-bottom: 25px;" src="static/images/drones_logo.png">
+                    </a>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (Coming Soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary (Coming Soon)</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/droneslab/EARTH/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+              <!-- <span class="link-block">
+                <a href="https://droneslab.github.io/Davis/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-database"></i>
+                  </span>
+                  <span>Davis Dataset</span>
+                  </a> -->
+
+              <div class="content has-text-justified">
+                <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+                  <source src="static/videos/Excavator-intro.mp4" type="video/mp4">
+                </video>
+                <p>
+                  Excavators, earth-movers, and large construction vehicles have been instrumental in propelling human civilization forward at an unprecedented pace. Recent breakthroughs in computing power, algorithms, and learning architectures have ushered in a new era of autonomy in robotics, now enabling these machines to operate independently. To this end, we introduce EARTH (Excavation Autonomy with Resilient Traversability and Handling), a groundbreaking framework for autonomous excavators and earth-movers. EARTH integrates several novel perception, planning, and hydraulic control components that work synergistically to empower embodied autonomy in these massive machines. This three-year project, funded by MOOG and undertaken in collaboration with the Center for Embodied Autonomy and Robotics (CEAR), represents a significant leap forward in the field of construction robotics.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <iframe height="540" width="960" src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</section> -->
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate feature detection is fundamental for various computer vision tasks including autonomous robotics, 3D reconstruction, medical imaging, and remote sensing. Despite advancements in enhancing the robustness of visual features, no existing method measures the utility of visual information be- fore processing by specific feature-type algorithms. To address this gap, we introduce PIXER and the concept of “Featureness”, which reflects the inherent interest and reliability of visual information for robust recognition independent of any specific feature type. Leveraging a generalization on Bayesian learning, our approach quantifies both the probability and uncertainty of a pixel's contribution to robust visual utility in a single- shot process, avoiding costly operations such as Monte Carlo sampling, and permitting customizable featureness definitions adaptable to a wide range of applications. We evaluate PIXER on visual-odometry with featureness selectivity, achieving an average of 31% improvement in RMSE trajectory with 49% fewer features.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+<!--Youtube video -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">EARTH Simulator</h2>
+        <div class="publication-video">
+          <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+            <source src="static/videos/EARTH | Simulation.mp4" type="video/mp4">
+          </video>
+        <p>Coming Soon!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">EARTH Waypoint Autonomy</h2>
+        <div class="publication-video">
+          <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+            <source src="static/videos/Excavation Autonomy | Waypoint.mp4" type="video/mp4">
+          </video>
+        <p>Coming Soon!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- End youtube video -->
+
+<!-- Method -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            The training of PIXER is a three-step process. First, we train a network with a general understanding of interestingness (i.e., feature point detection) where we make use of SiLK in this work (top left). Next, we convert this model to a Bayesian Neural Network (BNN) and train again using the addition of probabilistic losses (e.g., KL Divergence, top middle). Finally, we train a specialized uncertainty head using feature variance computed by Monte Carlo supervision from the BNN (top right). The PIXER inference model is then the joint feature-point probability and uncertainty networks (bottom middle). The combination of pixel-wise probability and uncertainty forms our definition of featureness F (bottom right), used to describe the general utility of the visual information.
+          </p>
+          <img style="width:100%;" src="static/images/pixer-network7.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Method -->
+
+<style>
+  .result-caption {
+    font-size: 20px;
+  }
+</style>
+
+<!-- Luna-1 -->
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">The Davis Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate PIXER aided visual odometry on a custom dataset, named "Davis", collected using a ZED 2i camera + Mosaic X5 GNSS on a Boston Dynamics Spot Quadruped. Results in Table below show superior estimation performance with mean RMSE improvement of 34% and mean feature reduction of 41%.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+            <img style="width:100%; padding-right: 15px;" src="static/images/pixer-real-robot3.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Luna-1 -->
+
+<!-- Results -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <h6>
+            Visual odometry (VO) performance results. Features when filtered using PIXER contribute to a lower RMSE (31% on average
+            across all datasets) and frame-to-frame execution time for VO estimation (0.63% despite the inclusion of model inference). This enables
+            using lighter, faster features like Shi-Tomasi while achieving performance better than SIFT (e.g., KITTI & Davis). We see a considerable
+            reduction in the number of keypoints in all datasets by roughly 49% (KP% shows % reduction while KPmean shows the mean number mean
+            of keypoints extracted per image). mean(FArea) is the average percentage of pixels masked with F.
+          </h6>
+          <img style="width:100%;" src="static/images/pixer-results.png">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Results -->
+
+
+
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Training Evolution</h2>
+        <div class="content has-text-centered">
+            <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+              <source src="static/videos/mars.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="video2" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+              <source src="static/videos/moon.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/earth.mp4" type="video/mp4">
+            </video>
+            <h6>
+              Attention alignment evolution during training for MARs (bottom row) against rotational equivarant and spatial attention layers (RIC CA, top row)
+              for Mars Crater (left), Moon Crater (middle), and Earth Stadium (right) features.
+            </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/mars.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/moon.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/earth.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- Video carousel -->
+<!-- <div id="wrapper"> 
+  <video id="home1" width="400" height="300" poster="" controls="controls" preload="none"> 
+      <source type="video/mp4" src="static/videos/mars.mp4" /> 
+  </video>
+  <video id="home2" width="400" height="300" poster="" controls="controls" preload="none"> 
+      <source type="video/mp4" src="static/videos/moon.mp4" /> 
+  </video>
+  <div class="clear"></div> 
+</div> -->
+<!-- End video carousel -->
+
+
+
+<!-- Poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered"><h2 class="title">Poster</h2>
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600"></iframe>
+      <embed src="static/pdfs/eccv_poster_final.pdf" width="100%" type="application/pdf">
+    </div>
+  </div>
+</section> -->
+<!-- End Poster -->
+
+
+
+
+
+
+
+<!-- <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <embed src="static/pdfs/eccv_poster_final.pdf" style="height:100%;" type="application/pdf"> -->
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+      <!-- Your image here -->
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light"></section>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">          
+          <div class="publication-video">
+            <iframe height="540" width="960" src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{turkar2024pixer,
+        title={Excavation Autonomy with Resilient Traversability and Handling with Pixer},
+        author={Yash Turkar,Timothy Chase Jr, Christo Aluckal and Karthik Dantu},
+        year={2024}
+      }
+        <!-- booktitle={ECCV}, -->
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- End of Statcounter Code -->
+
+  </body>
+  </html>
