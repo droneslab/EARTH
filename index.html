@@ -61,6 +61,8 @@
               <span class="author-block">
                 <a href="https://christoaluckal.com/" target="_blank">Christo Aluckal</a>,</span>
               <span class="author-block">
+                  <a href="https://sugheerth.github.io/" target="_blank">Sugheerth Sreedharan</a>,</span>
+              <span class="author-block">
                 <a href="https://yashomdighe.com/" target="_blank">Yashom Dighe</a>,</span>
               <span class="author-block">
                 <a href="https://www.linkedin.com/in/yjkim123" target="_blank">Youngjin Kim</a>,</span>
@@ -71,14 +73,16 @@
                   </div>
             <div class="is-size-6 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a target="_blank">Sugheerth Sreedharan</a>,</span>
+              <!-- <span class="author-block"> -->
+                <!-- <a target="_blank">Sugheerth Sreedharan</a>,</span> -->
               <span class="author-block">
                 <a target="_blank">Roopesh Vinodh Kumar Lal</a>,</span>
               <span class="author-block">
                 <a target="_blank">Alex Graziose</a>,</span>
               <span class="author-block">
                 <a target="_blank">Sean Courtney</a>,</span>
+              <span class="author-block">
+                  <a target="_blank">Jainam Jain</a>,</span>
               <span class="author-block">
                 <a target="_blank">Ishaan Malhotra</a></span>
                   </div>
@@ -108,12 +112,12 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/abs/" target="_blank"
+                        <a href="./static/docs/EARTH_WFR_Optimized.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper (Coming Soon)</span>
+                        <span>ICRA WFR 2025 Paper</span>
                       </a>
                     </span>
 
@@ -215,19 +219,71 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">TERA Simulator</h2>
+        <h2 class="title is-3">Simulation Environment (TERA)</h2>
         <div class="publication-video">
           <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
             <source src="static/videos/EARTH | Simulation.mp4" type="video/mp4">
           </video>
-        <p>Coming Soon!</p>
+        </div>
+        <div>
+          <p style="text-align: justify;">Developing excavation autonomy is challenging given the environments where excavators operate, the complexity of physical interaction and the degrees of freedom of operation of the excavator itself. Simulation is a useful tool to build parts of the autonomy without the complexity of experimentation. Traditional excavator simulators are geared towards high fidelity interactions between the joints or between the terrain but do not incorporate other challenges such as perception required for end-end autonomy. A complete simulator should be capable of supporting real-time operation while providing high fidelity simulation of the excavator(s), the environment, and their interaction. In this paper we present TERA (Terrain Excavation Robot Autonomy), a simulator geared towards autonomous excavator applications based on Unity3D/AGX that provides the extensibility and scalability required to study full autonomy. It provides the ability to configure the excavator and the environment per the user requirements. We also demonstrate realistic dynamics by incorporating a time-varying model that introduces variations in the system’s responses. The simulator is then evaluated with different scenarios such as track deformation, velocities on different terrains, similarity of the system with the real excavator and the overall path error to show the capabilities of the simulation.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section hero"></section>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Arm State-Estimation with Fluid Pressure</h2>
+        <div class="publication-video" style="margin-bottom: 0;">
+          <figure style="margin-bottom: 0;">
+            <img src="static/images/Pressure-Estimation.png" alt="Arm State-Estimation with Fluid Pressure" style="width:100%; height:auto;">
+          </figure>
+        </div>
+        <div style="margin-top: 10px;"></div>
+        <div>
+          <p style="text-align: justify;">Developing excavation autonomy is challenging given the environments where excavators operate, the complexity of physical interaction and the degrees of freedom of operation of the excavator itself. Simulation is a useful tool to build parts of the autonomy without the complexity of experimentation. Traditional excavator simulators are geared towards high fidelity interactions between the joints or between the terrain but do not incorporate other challenges such as perception required for end-end autonomy. A complete simulator should be capable of supporting real-time operation while providing high fidelity simulation of the excavator(s), the environment, and their interaction. In this paper we present TERA (Terrain Excavation Robot Autonomy), a simulator geared towards autonomous excavator applications based on Unity3D/AGX that provides the extensibility and scalability required to study full autonomy. It provides the ability to configure the excavator and the environment per the user requirements. We also demonstrate realistic dynamics by incorporating a time-varying model that introduces variations in the system’s responses. The simulator is then evaluated with different scenarios such as track deformation, velocities on different terrains, similarity of the system with the real excavator and the overall path error to show the capabilities of the simulation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Safe Control with CLF-CBF-QP</h2>
+        <div class="publication-video" style="margin-bottom: 0;">
+          <figure style="margin-bottom: 0;">
+            <img src="static/images/SafePlanning.png" alt="Safe Planning" style="width:70%; height:auto;">
+          </figure>
+        </div>
+        <div style="margin-top: 10px;"></div>
+        <div>
+          <p style="text-align: justify;">Safe planning not only mitigates risks associated with
+            human injury, equipment damage, and environmental harm
+            but also optimizes efficiency by enforcing constraints on key
+            parameters. Consider the challenges excavators face: navigat-
+            ing through dense urban areas while avoiding collisions with
+            buildings, digging around underground utilities without caus-
+            ing damage, operating in human collaborative workspace. By
+            leveraging Control Lyapunov and Control Barrier functions
+            (CLFs-CBFs) ], we can design reactive control-
+            based planners that proactively respond to obstacles, ensuring
+            safe operation well before any potential collisions occur. This
+            approach provides formal guarantees of safety and stability,
+            aligning with stringent industry standards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section hero"></section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -236,12 +292,12 @@
           <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
             <source src="static/videos/Excavation Autonomy | Waypoint.mp4" type="video/mp4">
           </video>
-        <p>Coming Soon!</p>
+          <p>Coming Soon!</p>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- End youtube video -->
