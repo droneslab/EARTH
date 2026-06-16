@@ -133,5 +133,62 @@ body {
   font-size: smaller;
 }
 
+.trogen-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.trogen-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.trogen-intro .content {
+  margin-bottom: 0;
+}
+
+.trogen-figure img,
+.trogen-method img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.trogen-subtitle {
+  margin-top: 2rem;
+}
+
+.trogen-method {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.trogen-method h4 {
+  margin-bottom: 0.75rem;
+}
+
+.trogen-method ul {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .trogen-intro {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .trogen-method {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 
 

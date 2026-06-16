@@ -61,7 +61,7 @@
               <span class="author-block">
                 <a href="https://christoaluckal.com/" target="_blank">Christo Aluckal</a>,</span>
               <span class="author-block">
-                  <a href="https://sugheerth.github.io/" target="_blank">Sugheerth Sreedharan</a>,</span>
+                  <a href="https://www.linkedin.com/in/sugheerth-sreedharan-56006923a" target="_blank">Sugheerth Sreedharan</a>,</span>
               <span class="author-block">
                 <a href="https://yashomdighe.com/" target="_blank">Yashom Dighe</a>,</span>
               <span class="author-block">
@@ -366,6 +366,70 @@ Previous data
       </div>
     </div>
     
+  </div>
+</section>
+
+<section class="section hero" id="diffusion-trajectory-planning">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Diffusion-based Trajectory Planning for Excavators with Learned Dynamics Models</h2>
+
+    <div class="trogen-intro">
+      <figure class="trogen-figure">
+        <img src="static/images/trogen-x-workflow.png" alt="Dynamics-guided diffusion trajectory generation workflow for hydraulic excavators">
+      </figure>
+
+      <div class="content has-text-justified">
+        <p>
+          Trajectory generation for hydraulic excavators is challenging because machine-specific nonlinear dynamics, hydraulic actuation delays, and valve dead zones make it difficult to convert a planned motion into feasible control commands. This work addresses that gap with a diffusion-based trajectory generation framework that uses learned forward and inverse dynamics models to produce dynamically coherent observation-control trajectories containing joint positions, joint velocities, hydraulic pressures, and control inputs.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="title is-4 has-text-centered trogen-subtitle">Methodology</h3>
+
+    <div class="content trogen-methodology">
+      <div class="trogen-method">
+        <div>
+          <h4 class="title is-5">Learned Forward and Inverse Dynamics</h4>
+          <ul>
+            <li>Four LSTM dynamics models operate over a rolling history of joint angles, joint velocities, control inputs, and hydraulic pressures for the boom, arm, and bucket.</li>
+            <li>The forward models predict induced pressure and induced velocity from recent history and control input.</li>
+            <li>The inverse models predict required pressure and required control for a recent history and desired joint velocity..</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="static/images/trogen-x-dynamics-learning.png" alt="Forward and inverse LSTM dynamics learning architecture">
+        </figure>
+      </div>
+
+      <div class="trogen-method">
+        <figure>
+          <img src="static/images/trogen-x-simulation-generation.png" alt="Observation-space trajectory in MoveIt and inferred trajectories executed in Gazebo">
+        </figure>
+        <div>
+          <h4 class="title is-5">Simulation-based Demonstration Generation</h4>
+          <ul>
+            <li>MoveIt generates state-space trajectories from start and goal states.</li>
+            <li>The inverse dynamics model converts the state-space plan into state observation-control trajectories.</li>
+            <li>The forward model maps those controls into joint velocities for Gazebo execution, enabling scalable demonstration collection.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trogen-method">
+        <div>
+          <h4 class="title is-5">Dynamics-guided Diffusion Sampling</h4>
+          <ul>
+            <li>The diffusion planner is conditioned on start state, goal state, and a history of state observations and controls.</li>
+            <li>The gradient from the learned forward dynamics models is used as the guidance during sampling to generate dynamically feasible trajectories.</li>
+            <li>The sampler outputs observation-control trajectories that can be used in simulation and hardware experiments.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="static/images/trogen-x-guidance-equations.png" alt="Reward and gradient guidance equations for dynamics-guided diffusion sampling">
+        </figure>
+      </div>
+    </div>
   </div>
 </section>
 
